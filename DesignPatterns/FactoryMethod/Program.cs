@@ -47,6 +47,7 @@ namespace FactoryMethod
     // Creator
     interface ICreditUnionFactory
     {
+        // returns an ISavingsAccount for the operation GetSavingsAccount with acctNo
         ISavingsAccount GetSavingsAccount(string acctNo);
     }
 
