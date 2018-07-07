@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DesignPatterns2016
 {
-    class UsingProperties
+    public class UsingProperties
     {
         private string _name = "default";
         private Thingy _thingy;
@@ -36,9 +36,9 @@ namespace DesignPatterns2016
 
     }
 
-    class Thingy {
-        public string Name;
-        public string Value;
+    public class Thingy {
+        public string Name = "Thingy.Name";
+        public string Value = "Thingy.Value";
     }
 
 }
