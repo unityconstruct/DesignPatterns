@@ -16,6 +16,9 @@ namespace DesignPatterns2016.Tests
             thingy.Value = "NEWVALUE";
             Console.WriteLine($"Thingy Name=\"{thingy.Name}\", Thingy Value: \"{thingy.Value}\"");
             Assert.AreSame(up.AThingy, up.AThingy);
+
+            var thingy2 = up.AThingy;
+            Assert.AreSame(thingy, thingy2);
         }
     }
 }
