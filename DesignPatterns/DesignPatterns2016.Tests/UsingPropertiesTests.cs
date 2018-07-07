@@ -11,8 +11,9 @@ namespace DesignPatterns2016.Tests
         {
             //Assert.AreSame(Using)
             UsingProperties up = new UsingProperties();
-            up.Name = "NEWNAME";
             var thingy = up.AThingy;
+            thingy.Name = "NEWNAME";
+            thingy.Value = "NEWVALUE";
             Console.WriteLine($"Thingy Name=\"{thingy.Name}\", Thingy Value: \"{thingy.Value}\"");
             Assert.AreSame(up.AThingy, up.AThingy);
         }
